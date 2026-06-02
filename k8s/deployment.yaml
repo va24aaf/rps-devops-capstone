@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: rps-app
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: rps-app
+
+  template:
+    metadata:
+      labels:
+        app: rps-app
+
+    spec:
+      containers:
+      - name: rps-app
+        image: rpsdevopsacr12345.azurecr.io/rps-app:v2
+
+        ports:
+        - containerPort: 5000
+      
