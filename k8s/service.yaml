@@ -1,8 +1,10 @@
 apiVersion: v1
-kind: Service 
+kind: Service
 
 metadata:
   name: rps-service
+  labels:
+    app: rps-app
 
 spec:
   type: LoadBalancer
@@ -11,6 +13,7 @@ spec:
     app: rps-app
 
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 80
       targetPort: 5000
