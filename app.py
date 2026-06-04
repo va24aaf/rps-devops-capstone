@@ -72,7 +72,7 @@ def health():
 def metrics():
     return Response(
         generate_latest(),
-        mimetype="CONTENT_TYPE_LATEST"
+        mimetype=CONTENT_TYPE_LATEST
     )
 
 if __name__ == "__main__":
