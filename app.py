@@ -5,7 +5,7 @@ import random
 import time
 
 app = Flask(__name__)
-APP_VERSION = "v2-dockerized"
+APP_VERSION = "v3-dockerized"
 
 #Prometheus metrics
 REQUEST_COUNT = Counter(
