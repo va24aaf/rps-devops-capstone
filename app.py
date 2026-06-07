@@ -1,6 +1,5 @@
-from flask import Flask,render_template,request,jsonify
-from prometheus_client import Counter,generate_latest
-from prometheus_client import Histogram
+from flask import Flask, render_template, request, jsonify, Response
+from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
 import random
 import time
 
