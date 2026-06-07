@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: rps-app
-        image: rpsdevopsacr12345.azurecr.io/rps-app:v3
+        image: rpsdevopsacr12345.azurecr.io/rps-app:v4
 
         ports:
         - containerPort: 5000
